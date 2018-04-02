@@ -11,10 +11,11 @@ C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitClo
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.exe.config
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.exe
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.pdb
-C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.csprojResolveAssemblyReference.cache
-C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Form1.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Properties.Resources.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.csproj.GenerateResource.Cache
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.csproj.CoreCompileInputs.cache
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.exe
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.pdb
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloudClient.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Login.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.UploadAFile.resources

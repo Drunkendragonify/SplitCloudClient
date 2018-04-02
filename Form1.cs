@@ -13,22 +13,52 @@ using System.Windows.Forms;
 
 namespace SplitCloudClient
 {
-    public partial class Form1 : Form
+    public partial class SplitCloudClient : Form
     {
-        public Form1()
+        public SplitCloudClient()
         {
             InitializeComponent();
         }
 
-        private void Selectfile_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Title = "Select a File";
 
-            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                Stream _chosenfile = openFileDialog1.OpenFile();
-            }
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SplitCloudClient_Load(object sender, EventArgs e)
+        { 
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Not built yet");
+        }
+
+        private void login1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uploadAFile1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(1);
         }
     }
 }
