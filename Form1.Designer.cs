@@ -36,20 +36,21 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(12, 405);
+            this.progressBar1.Location = new System.Drawing.Point(11, 297);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(469, 23);
+            this.progressBar1.Size = new System.Drawing.Size(352, 19);
             this.progressBar1.TabIndex = 0;
             // 
             // selectfile
             // 
-            this.selectfile.Location = new System.Drawing.Point(12, 12);
+            this.selectfile.Location = new System.Drawing.Point(9, 10);
+            this.selectfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.selectfile.Name = "selectfile";
-            this.selectfile.Size = new System.Drawing.Size(130, 69);
+            this.selectfile.Size = new System.Drawing.Size(98, 56);
             this.selectfile.TabIndex = 1;
             this.selectfile.Text = "Select File";
             this.selectfile.UseVisualStyleBackColor = true;
@@ -57,11 +58,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 440);
+            this.ClientSize = new System.Drawing.Size(383, 335);
             this.Controls.Add(this.selectfile);
             this.Controls.Add(this.progressBar1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Split Cloud Client";
             this.ResumeLayout(false);
