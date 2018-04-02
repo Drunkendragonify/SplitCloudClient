@@ -1,6 +1,6 @@
 ﻿namespace SplitCloudClient
 {
-    partial class Login
+    partial class Auth
     {
         /// <summary> 
         /// Required designer variable.

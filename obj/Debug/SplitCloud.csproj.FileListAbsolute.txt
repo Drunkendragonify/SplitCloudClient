@@ -1,0 +1,11 @@
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloudClient.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Auth.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Properties.Resources.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.UploadAFile.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloud.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloud.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.exe
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.pdb
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.exe.config
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.exe
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\bin\Debug\SplitCloudClient.pdb

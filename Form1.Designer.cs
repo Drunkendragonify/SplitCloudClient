@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.uploadAFile1 = new UploadAFile();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -129,15 +130,20 @@
             this.label1.Text = "Split Cloud Client";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // login1
+            // uploadAFile1
             // 
-
+            this.uploadAFile1.Location = new System.Drawing.Point(179, 69);
+            this.uploadAFile1.Name = "uploadAFile1";
+            this.uploadAFile1.Size = new System.Drawing.Size(679, 206);
+            this.uploadAFile1.TabIndex = 4;
+            this.uploadAFile1.Load += new System.EventHandler(this.uploadAFile1_Load_2);
             // 
             // SplitCloudClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(870, 335);
+            this.Controls.Add(this.uploadAFile1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -160,6 +166,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
+        private UploadAFile uploadAFile1;
     }
 }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SplitCloudClient
 {
-    public partial class Login : UserControl
+    public partial class Auth : UserControl
     {
-        public Login()
+        public Auth()
         {
             InitializeComponent();
         }
