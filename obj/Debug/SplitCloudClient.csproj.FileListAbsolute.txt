@@ -19,3 +19,4 @@ C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.pdb
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloudClient.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Login.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.UploadAFile.resources
+C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.csprojResolveAssemblyReference.cache
