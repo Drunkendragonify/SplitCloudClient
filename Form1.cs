@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace SplitCloudClient
 {
-    public partial class SplitCloudClient : Form
+    public partial class SplitCloud : Form
     {
-        public SplitCloudClient()
+        public SplitCloud()
         {
             InitializeComponent();
         }
@@ -30,6 +30,7 @@ namespace SplitCloudClient
         private void SplitCloudClient_Load(object sender, EventArgs e)
         {
             uploadAFile1 = new UploadAFile();
+            uploadAFile1.Hide();
             
         }
 
@@ -40,6 +41,7 @@ namespace SplitCloudClient
 
         private void button2_Click(object sender, EventArgs e)
         {
+            uploadAFile1.Show();
             Upload upload = new Upload();
             upload.Show();
             Form form = new Form();
@@ -53,7 +55,7 @@ namespace SplitCloudClient
 
         private void button4_Click(object sender, EventArgs e)
         {
-           
+           Environment.Exit(1);
         }
 
 

@@ -18,7 +18,7 @@ namespace SplitCloudClient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SplitCloudClient());
+            Application.Run(new SplitCloud());
         }
 
         public static IPAddress GetIpAddress(string hostName)

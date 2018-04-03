@@ -1,6 +1,6 @@
 ﻿namespace SplitCloudClient
 {
-    partial class SplitCloudClient
+    partial class SplitCloud
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.uploadAFile1 = new UploadAFile();
+            this.uploadAFile1 = new SplitCloudClient.UploadAFile();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -132,13 +132,13 @@
             // 
             // uploadAFile1
             // 
-            this.uploadAFile1.Location = new System.Drawing.Point(179, 69);
+            this.uploadAFile1.Location = new System.Drawing.Point(144, 50);
             this.uploadAFile1.Name = "uploadAFile1";
             this.uploadAFile1.Size = new System.Drawing.Size(679, 206);
             this.uploadAFile1.TabIndex = 4;
             this.uploadAFile1.Load += new System.EventHandler(this.uploadAFile1_Load_2);
             // 
-            // SplitCloudClient
+            // SplitCloud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "SplitCloudClient";
+            this.Name = "SplitCloud";
             this.Text = "Split Cloud Client";
             this.Load += new System.EventHandler(this.SplitCloudClient_Load);
             this.panel1.ResumeLayout(false);
