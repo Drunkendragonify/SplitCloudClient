@@ -30,6 +30,7 @@ namespace SplitCloudClient
         private void SplitCloudClient_Load(object sender, EventArgs e)
         {
             uploadAFile1 = new UploadAFile();
+            uploadAFile1.Hide();
             
         }
 
@@ -40,6 +41,7 @@ namespace SplitCloudClient
 
         private void button2_Click(object sender, EventArgs e)
         {
+            uploadAFile1.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
