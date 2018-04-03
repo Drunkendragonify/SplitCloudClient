@@ -38,8 +38,17 @@ namespace SplitCloudClient
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Upload upload = new Upload();
-            upload.Hide();
+            Hide();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
