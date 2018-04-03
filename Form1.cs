@@ -41,7 +41,12 @@ namespace SplitCloudClient
 
         private void button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             uploadAFile1.Show();
+=======
+            Upload upload = new Upload();
+            upload.Show();
+>>>>>>> origin/master
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -51,7 +56,7 @@ namespace SplitCloudClient
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Environment.Exit(1);
+           
         }
 
 

@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+<<<<<<< HEAD
 VisualStudioVersion = 15.0.27130.2010
+=======
+VisualStudioVersion = 15.0.27130.2027
+>>>>>>> origin/master
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitCloud", "SplitCloud.csproj", "{1EDD9A72-1EC7-4BB5-A7DA-9BAC1EFEB322}"
 EndProject
@@ -20,6 +24,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {DFF01A95-37AB-4C77-8532-3E397383E05B}
+=======
+		SolutionGuid = {BB22FF2A-7B98-4244-8654-00507B129E0D}
+>>>>>>> origin/master
 	EndGlobalSection
 EndGlobal
