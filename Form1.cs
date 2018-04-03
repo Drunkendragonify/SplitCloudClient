@@ -42,6 +42,8 @@ namespace SplitCloudClient
         {
             Upload upload = new Upload();
             upload.Show();
+            Form form = new Form();
+            form.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
