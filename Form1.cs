@@ -40,6 +40,8 @@ namespace SplitCloudClient
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Upload upload = new Upload();
+            upload.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -49,7 +51,7 @@ namespace SplitCloudClient
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Environment.Exit(1);
+           
         }
 
 
