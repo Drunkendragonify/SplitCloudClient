@@ -19,7 +19,6 @@ C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitClo
 C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloud.csproj.CoreCompileInputs.cache
 C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.exe
 C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.pdb
-C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.Upload.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloud.csprojResolveAssemblyReference.cache
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Upload.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloud.resources
