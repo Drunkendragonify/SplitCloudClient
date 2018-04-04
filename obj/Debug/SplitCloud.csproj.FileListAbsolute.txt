@@ -24,3 +24,4 @@ C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitClo
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloud.csprojResolveAssemblyReference.cache
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Upload.resources
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloud.resources
+C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloud.resources
