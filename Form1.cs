@@ -42,7 +42,7 @@ namespace SplitCloudClient
         private void button2_Click(object sender, EventArgs e)
         {
             uploadAFile1.Show();
-            Upload upload = new Upload();
+            Form2 upload = new Form2();
             upload.Show();
             Form form = new Form();
             form.Hide();
@@ -60,6 +60,16 @@ namespace SplitCloudClient
 
 
         private void uploadAFile1_Load_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

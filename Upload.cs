@@ -55,7 +55,6 @@ namespace SplitCloudClient
             string encryptionlevel = trackBar2.Value.ToString();
             string splitlevel = trackBar1.Value.ToString();
 
-<<<<<<< HEAD
             if (string.Equals(encryptionlevel, "0"))  //no encryption
             {
                 //
@@ -99,21 +98,6 @@ namespace SplitCloudClient
             {
                 //
             }
-=======
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Hide();
-        }
-
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar5_Click(object sender, EventArgs e)
-        {
-
->>>>>>> 5a8f4878acfe3ffe36b6bc8265a277c449ff41c2
         }
     }
 }
