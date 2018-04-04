@@ -31,7 +31,6 @@ namespace SplitCloudClient
         {
             uploadAFile1 = new UploadAFile();
             uploadAFile1.Hide();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -41,21 +40,21 @@ namespace SplitCloudClient
 
         private void button2_Click(object sender, EventArgs e)
         {
-            uploadAFile1.Show();
             Form2 upload = new Form2();
             upload.Show();
-            Form form = new Form();
-            form.Hide();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Not built yet");
+            Form3 download = new Form3();
+            download.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-           Environment.Exit(1);
+            this.Close();
         }
 
 

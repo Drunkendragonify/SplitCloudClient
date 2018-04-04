@@ -14,8 +14,7 @@ namespace SplitCloudClient
 
         private void button4_Click(object sender, EventArgs e)  //meant to exit window but doesnt work
         {
-            Form2 upload = new Form2();
-            upload.Hide();
+            this.Close();
         }
 
         public string path;
@@ -160,7 +159,7 @@ namespace SplitCloudClient
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            //i accidently clicked on it now everytime i delete it, everything breaks
         }
     }
 }

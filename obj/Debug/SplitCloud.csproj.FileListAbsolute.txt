@@ -24,3 +24,4 @@ C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.Upload
 C:\Users\Sam\Documents\GitHub\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloud.resources
 C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.SplitCloud.resources
 C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.Form2.resources
+C:\Users\wreck\source\repos\SplitCloudClient\SplitCloudClient\obj\Debug\SplitCloudClient.Form3.resources
