@@ -19,6 +19,12 @@ Done
 - Working on encryption
 - Working on split
 
+Possiable
+-
+- Return request queue server thingy
+- Other platforms
+- Demo period/version
+
 
 
 
