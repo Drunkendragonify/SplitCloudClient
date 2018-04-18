@@ -33,9 +33,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.uploadAFile1 = new SplitCloudClient.UploadAFile();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.upload1 = new SplitCloudClient.Upload();
+            this.Name = new System.Windows.Forms.Label();
+            this.download1 = new SplitCloudClient.Download();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +53,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(183, 412);
+            this.panel1.Size = new System.Drawing.Size(183, 390);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -111,68 +113,91 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Cornsilk;
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(183, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(977, 54);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 11);
+            this.label1.Location = new System.Drawing.Point(191, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Split Cloud Client";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // uploadAFile1
+            // panel2
             // 
-            this.uploadAFile1.Location = new System.Drawing.Point(192, 62);
-            this.uploadAFile1.Margin = new System.Windows.Forms.Padding(5);
-            this.uploadAFile1.Name = "uploadAFile1";
-            this.uploadAFile1.Size = new System.Drawing.Size(905, 254);
-            this.uploadAFile1.TabIndex = 4;
-            this.uploadAFile1.Load += new System.EventHandler(this.uploadAFile1_Load_2);
+            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.download1);
+            this.panel2.Controls.Add(this.upload1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(183, 75);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(718, 315);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // upload1
+            // 
+            this.upload1.Location = new System.Drawing.Point(3, 3);
+            this.upload1.Name = "upload1";
+            this.upload1.Size = new System.Drawing.Size(707, 309);
+            this.upload1.TabIndex = 1;
+            this.upload1.Load += new System.EventHandler(this.upload1_Load);
+            // 
+            // Name
+            // 
+            this.Name.AutoSize = true;
+            this.Name.Dock = System.Windows.Forms.DockStyle.Right;
+            this.Name.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name.Location = new System.Drawing.Point(891, 0);
+            this.Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Name.Name = "Name";
+            this.Name.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            this.Name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Name.Size = new System.Drawing.Size(10, 40);
+            this.Name.TabIndex = 4;
+            this.Name.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // download1
+            // 
+            this.download1.Location = new System.Drawing.Point(0, 0);
+            this.download1.Name = "download1";
+            this.download1.Size = new System.Drawing.Size(707, 307);
+            this.download1.TabIndex = 2;
             // 
             // SplitCloud
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 412);
-            this.Controls.Add(this.uploadAFile1);
+            this.BackColor = System.Drawing.Color.Cornsilk;
+            this.ClientSize = new System.Drawing.Size(901, 390);
+            this.Controls.Add(this.Name);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "SplitCloud";
             this.Text = "Split Cloud Client";
             this.Load += new System.EventHandler(this.SplitCloudClient_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
-        private UploadAFile uploadAFile1;
+        private Upload upload1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private new System.Windows.Forms.Label Name;
+        private Download download1;
     }
 }
 

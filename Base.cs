@@ -1,15 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SplitCloudClient
@@ -19,37 +9,49 @@ namespace SplitCloudClient
         public SplitCloud()
         {
             InitializeComponent();
+            upload1.Hide();
+            download1.Hide();
+
+            string systemFolder = Environment.SpecialFolder.MyDocuments + "\\" + "Split_Cloud";
+
+            if (!Directory.Exists(systemFolder))
+                Directory.CreateDirectory(systemFolder);
         }
 
-
-        private void label1_Click(object sender, EventArgs e)
+        protected override void WndProc(ref Message m)
         {
-            
+            base.WndProc(ref m);
+            if (m.Msg == WM_NCHITTEST)
+                m.Result = (IntPtr)(HT_CAPTION);
         }
+
+        private const int WM_NCHITTEST = 0x84;
+        private const int HT_CLIENT = 0x1;
+        private const int HT_CAPTION = 0x2;
 
         private void SplitCloudClient_Load(object sender, EventArgs e)
         {
-            uploadAFile1 = new UploadAFile();
-            uploadAFile1.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form2 upload = new Form2();
-            upload.Show();
-            this.Hide();
+            download1.Hide();
+            upload1.Show();
+            Name.Text = "Upload";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 download = new Form3();
-            download.Show();
-            this.Hide();
+            upload1.Hide();
+            download1.Show();
+            Name.Text = "Download";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -69,6 +71,11 @@ namespace SplitCloudClient
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void upload1_Load(object sender, EventArgs e)
         {
 
         }
