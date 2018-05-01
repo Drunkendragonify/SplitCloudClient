@@ -41,6 +41,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
@@ -168,10 +169,20 @@
             this.progressBar2.Size = new System.Drawing.Size(324, 23);
             this.progressBar2.TabIndex = 26;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(431, 84);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(239, 196);
+            this.listBox1.TabIndex = 27;
+            // 
             // Upload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label6);
@@ -209,5 +220,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

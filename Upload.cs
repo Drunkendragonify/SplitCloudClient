@@ -2,6 +2,12 @@
 using System.IO;
 using System.Net;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 
 namespace SplitCloudClient
 {
@@ -14,6 +20,8 @@ namespace SplitCloudClient
         }
 
         public string path;
+        public string SaveFileFolder = @"c:\";
+        public string name;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -25,6 +33,7 @@ namespace SplitCloudClient
                 string name = Path.GetFileName(file.FileName);
                 //MessageBox.Show(path,"Location of selected file");
                 //MessageBox.Show(name, "Name of selected file");
+                int FileLength = path.Length / 1024;
                 textBox1.Text = path;
             }
         }
@@ -68,68 +77,73 @@ namespace SplitCloudClient
                 progressBar2.PerformStep();
             }
 
-            if (string.Equals(splitlevel, "1")) //light split //http://codemaverick.blogspot.co.uk/2007/01/split-and-merge-file-in-c.html
+            if (string.Equals(splitlevel, "1")) //light split //https://www.c-sharpcorner.com/uploadfile/a72401/split-and-merge-files-in-C-Sharp/
             {
+                List<string> Packets = new List<string>();
+
                 try
                 {
-                    progressBar2.Maximum = 5;
-                    progressBar2.Step = 1;
-                    FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
-                    int numberOfFiles = 5;
-                    int sizeOfEachFile = (int)Math.Ceiling((double)fs.Length / numberOfFiles);
-
-                    for (int i = 1; i <= numberOfFiles; i++)
                     {
-                        string baseFileName = Path.GetFileNameWithoutExtension(path);
-                        string extension = Path.GetExtension(path);
-                        FileStream outputFile = new FileStream(Path.GetDirectoryName(path) + "\\" + baseFileName + "." + i.ToString().PadLeft(5, Convert.ToChar("0")) + extension + ".tmp", FileMode.Create, FileAccess.Write);
-                        int bytesRead = 0;
-                        byte[] buffer = new byte[sizeOfEachFile];
-
-                        if ((bytesRead = fs.Read(buffer, 0, sizeOfEachFile)) > 0)
-                        {
-                            outputFile.Write(buffer, 0, bytesRead);
-                            progressBar2.PerformStep();
-                        }
-                        outputFile.Close();
+                        SplitFile(path, Convert.ToInt32(5));
+                        listBox1.Items.Add(Packets[0].ToString());
+                        listBox1.Items.Add(Packets[1].ToString());
+                        listBox1.Items.Add(Packets[2].ToString());
+                        listBox1.Items.Add(Packets[3].ToString());
+                        listBox1.Items.Add(Packets[4].ToString());
                     }
-                    fs.Close();
-                    MessageBox.Show("Light Splitting Complete");
                 }
 
                 catch
                 {
                     MessageBox.Show("Light Splitting Failed");
                 }
+
+                bool SplitFile(string SourceFile, int nNoofFiles)
+                {
+
+                    try
+                    {
+                        FileStream path = new FileStream(SourceFile, FileMode.Open, FileAccess.Read);
+                        int SizeofEachFile = (int)Math.Ceiling((double)path.Length / nNoofFiles);
+
+                        for (int i = 0; i < nNoofFiles; i++)
+                        {
+                            string baseFileName = Path.GetFileNameWithoutExtension(SourceFile);
+                            string Extension = Path.GetExtension(SourceFile);
+
+                            FileStream outputFile = new FileStream(path: Path.GetDirectoryName(SourceFile) + "\\" + baseFileName + "." + i.ToString().PadLeft(5, Convert.ToChar("0")) + Extension + ".tmp", mode: FileMode.Create, access: FileAccess.Write);
+
+                            string mergeFolder = Path.GetDirectoryName(SourceFile);
+
+                            int bytesRead = 0;
+                            byte[] buffer = new byte[SizeofEachFile];
+
+                            if ((bytesRead = path.Read(buffer, 0, SizeofEachFile)) > 0)
+                            {
+                                outputFile.Write(buffer, 0, bytesRead);
+                                //outp.Write(buffer, 0, BytesRead);
+
+                                string packet = baseFileName + "." + i.ToString().PadLeft(3, Convert.ToChar("0")) + Extension.ToString();
+                                Packets.Add(packet);
+                            }
+
+                            outputFile.Close();
+
+                        }
+                        path.Close();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Failed");
+                    }
+                }
             }
 
-            if (string.Equals(splitlevel, "2")) //heavy split //http://codemaverick.blogspot.co.uk/2007/01/split-and-merge-file-in-c.html
+            if (string.Equals(splitlevel, "2")) //heavy split //https://www.c-sharpcorner.com/uploadfile/a72401/split-and-merge-files-in-C-Sharp/
             {
                 try
                 {
-                    progressBar2.Maximum = 10;
-                    progressBar2.Step = 1;
-                    FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read);
-                    int numberOfFiles = 10;
-                    int sizeOfEachFile = (int)Math.Ceiling((double)fs.Length / numberOfFiles);
 
-                    for (int i = 1; i <= numberOfFiles; i++)
-                    {
-                        string baseFileName = Path.GetFileNameWithoutExtension(path);
-                        string extension = Path.GetExtension(path);
-                        FileStream outputFile = new FileStream(Path.GetDirectoryName(path) + "\\" + baseFileName + "." + i.ToString().PadLeft(5, Convert.ToChar("0")) + extension + ".tmp", FileMode.Create, FileAccess.Write);
-                        int bytesRead = 0;
-                        byte[] buffer = new byte[sizeOfEachFile];
-
-                        if ((bytesRead = fs.Read(buffer, 0, sizeOfEachFile)) > 0)
-                        {
-                            outputFile.Write(buffer, 0, bytesRead);
-                            progressBar2.PerformStep();
-                        }
-                        outputFile.Close();
-                    }
-                    fs.Close();
-                    MessageBox.Show("Heavy Splitting Complete");
                 }
 
                 catch

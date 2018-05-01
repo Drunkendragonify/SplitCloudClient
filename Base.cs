@@ -11,20 +11,21 @@ namespace SplitCloudClient
             InitializeComponent();
             upload1.Hide();
             download1.Hide();
+            Name.Text = "";
 
             string systemFolder = Environment.SpecialFolder.MyDocuments + "\\" + "Split_Cloud";
 
             if (!Directory.Exists(systemFolder))
                 Directory.CreateDirectory(systemFolder);
         }
-
+        
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);
             if (m.Msg == WM_NCHITTEST)
                 m.Result = (IntPtr)(HT_CAPTION);
         }
-
+        
         private const int WM_NCHITTEST = 0x84;
         private const int HT_CLIENT = 0x1;
         private const int HT_CAPTION = 0x2;
@@ -78,6 +79,17 @@ namespace SplitCloudClient
         private void upload1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
         }
     }
 }

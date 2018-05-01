@@ -35,9 +35,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.download1 = new SplitCloudClient.Download();
             this.upload1 = new SplitCloudClient.Upload();
             this.Name = new System.Windows.Forms.Label();
-            this.download1 = new SplitCloudClient.Download();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -123,6 +124,7 @@
             this.label1.Size = new System.Drawing.Size(219, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Split Cloud Client";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -137,6 +139,13 @@
             this.panel2.TabIndex = 3;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // download1
+            // 
+            this.download1.Location = new System.Drawing.Point(0, 0);
+            this.download1.Name = "download1";
+            this.download1.Size = new System.Drawing.Size(707, 307);
+            this.download1.TabIndex = 2;
+            // 
             // upload1
             // 
             this.upload1.Location = new System.Drawing.Point(3, 3);
@@ -150,21 +159,27 @@
             this.Name.AutoSize = true;
             this.Name.Dock = System.Windows.Forms.DockStyle.Right;
             this.Name.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(891, 0);
+            this.Name.Location = new System.Drawing.Point(804, 0);
             this.Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Name.Name = "Name";
-            this.Name.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            this.Name.Padding = new System.Windows.Forms.Padding(0, 30, 10, 0);
             this.Name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Name.Size = new System.Drawing.Size(10, 40);
+            this.Name.Size = new System.Drawing.Size(97, 60);
             this.Name.TabIndex = 4;
+            this.Name.Text = "Name";
             this.Name.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // download1
+            // label2
             // 
-            this.download1.Location = new System.Drawing.Point(0, 0);
-            this.download1.Name = "download1";
-            this.download1.Size = new System.Drawing.Size(707, 307);
-            this.download1.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(877, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(16, 19);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "_";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // SplitCloud
             // 
@@ -172,6 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.ClientSize = new System.Drawing.Size(901, 390);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -198,6 +214,7 @@
         private System.Windows.Forms.Panel panel2;
         private new System.Windows.Forms.Label Name;
         private Download download1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
